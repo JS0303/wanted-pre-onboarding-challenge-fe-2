@@ -9,7 +9,7 @@
  * @typedef {Object} Todo - todo type
  * @property {string} id - todo id
  * @property {string} content - todo content
- * @property {boolean} do - todo status
+ * @property {boolean} done - todo status
  * @property {string} category - todo category
  * @property {Tag[]} tags - tags string array
  */
@@ -47,7 +47,7 @@ async function getTodoDetail(id){}
  * @typedef {Object} UpdateTodo - updateTodo type.
  * @property {string} id - id. required.
  * @property {string=} content - content. optional.
- * @property {boolean} do - status. optional.
+ * @property {boolean} done - status. optional.
  * @property {string=} category - category. optional.
  * @property {Array<string>=} tags - tags string array. optional
  */
@@ -58,7 +58,7 @@ async function getTodoDetail(id){}
  * @param {UpdateTodo} props required : id, optional : content, do, category, tags
  * @returns {Promise<Todo>} todo json data about update
  */
-async function upadateTodo({ id, content, do, category, tags})
+async function updateTodo({ id, content, done, category, tags})
 
 /**
  * function deleteTodo deletes todo.
