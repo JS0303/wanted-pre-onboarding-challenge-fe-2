@@ -4,10 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "docs": "jsdoc -c jsdoc.json",
-    "build": "webpack --mode production",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "docs": "jsdoc -c jsdoc.json"
   },
   "devDependencies": {
     "gh-pages": "^5.0.0",
